@@ -6,7 +6,11 @@ using namespace std;
 int main()
 {
 	ll i,j;
-
-
+    ll answer = 1;
+    for(i=40;i>20;--i){
+        answer = answer*i;
+        answer = answer/(41-i);
+    }
+    cout<<answer;
 	return 0;
 }
